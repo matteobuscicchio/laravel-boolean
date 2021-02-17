@@ -82,6 +82,15 @@
                     <a href="blog">Blog</a>
                 </div>
             </div>
+
+            <div class="container">
+                <h3>Posts</h3>
+                @foreach($posts as $post)
+                    <div>
+                        <h4>{{$post->title}}</h4>
+                        <p>{{$post->body}}</p>
+                    </div>
+                @endforeach
         </div>
     </body>
 </html>
